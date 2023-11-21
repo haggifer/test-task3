@@ -1,0 +1,32 @@
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.code {
+  font-size: 150px;
+  line-height: 1;
+  color: #ff000266;
+}
+
+.message {
+  margin-bottom: 20px;
+  font-size: 35px;
+  line-height: 1;
+  color: #ff000266;
+}
+
+.buttons {
+  > *:not(:first-child) {
+    margin-left: 10px;
+  }
+}

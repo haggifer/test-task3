@@ -1,0 +1,24 @@
+@value globalValues: "../../../assets/scss/globalValues.module.scss";
+
+@value accentColor from globalValues;
+
+.list_item {
+  border: 1px solid accentColor;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f0f0fa;
+  text-decoration: none;
+
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
+  .list_xs & {
+    min-height: unset;
+  }
+}
+
+.list_item_title {
+  font-weight: bold;
+  text-transform: capitalize;
+}

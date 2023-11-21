@@ -1,0 +1,98 @@
+@value globalValues: "../../../assets/scss/globalValues.module.scss";
+
+@value accentColor from globalValues;
+
+.filters {
+  display: flex;
+  margin-bottom: 20px;
+
+  > *:not(:first-child):not(.progress) {
+    margin-left: 10px;
+  }
+}
+
+.search {
+
+}
+
+.progress {
+  margin-left: auto;
+}
+
+.list {
+  display: grid;
+  gap: 15px;
+}
+
+.list_xs {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.list_sm {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.list_md {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.list_lg {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.list_item {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  min-height: 250px;
+  border: 1px solid accentColor;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f0f0fa;
+  text-decoration: none;
+
+  .list_xs & {
+    min-height: unset;
+  }
+}
+
+.list_item_image, .list_item_image_fallback {
+  height: 100px;
+}
+
+.list_item_image {
+  object-fit: contain;
+}
+
+.list_item_image_fallback {
+  padding: 15px;
+}
+
+.list_item_name {
+  font-weight: bold;
+  color: accentColor;
+}
+
+.list_item_buttons {
+  margin-top: 20px;
+
+  button {
+    width: 100%;
+  }
+
+  > *:not(:first-child) {
+    > * {
+      margin-top: 10px;
+    }
+  }
+}
+
+.list_pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+
+  > *:not(:first-child) {
+    margin-left: 10px;
+  }
+}
