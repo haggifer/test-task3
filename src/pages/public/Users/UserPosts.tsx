@@ -43,7 +43,7 @@ export default function UserPosts(): ReactElement {
     }
   }
 
-  return (
+  return ( 
     <>
       <Helmet>
         <title>User Posts</title>
