@@ -15,7 +15,7 @@ import * as yup from 'yup'
 import { useDebounce } from "usehooks-ts";
 import { IUserListParams } from "../../../typescript/api";
 import { ISelectOption } from "../../../typescript/common";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 interface IFiltersValues {
   search: IUserListParams['username'],

@@ -10,7 +10,6 @@ export default function PageLayout(): ReactElement {
 
   useEffect(() => {
     if (location.pathname === '/') {
-      console.log(1)
       navigate(defaultPublicPath)
     }
   }, [location.pathname]);
